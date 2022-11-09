@@ -13,7 +13,7 @@ import
 from sequtils import toSeq
 from algorithm import reversed
 
-const version = "0.2.0"
+const version = "0.3.0"
 
 from compiler/ast import PNode, nkImportStmt, nkExportStmt, nkCharLit,
     nkUInt64Lit, nkFloatLit, nkFloat128Lit, nkStrLit, nkTripleStrLit, nkSym, nkIdent
@@ -35,7 +35,7 @@ const default_conf_search_fns = "./.nimfmt.cfg ~/.config/nimfmt.cfg ~/.nimfmt.cf
 proc writeHelp(exit_val = 0) =
   ## Write help and quit
   let name = getAppFilename().extractFilename()
-  echo "nimfmt v. $#  -  Nim style tool" % version
+  echo "nimfmt v$#  -  Nim style tool" % version
   echo """
   Usage: $# <filename.nim> [<filename.nim> ... ]
   [ -p=<prefix> ]        output file prefix

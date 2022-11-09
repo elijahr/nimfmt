@@ -1,6 +1,6 @@
 # Package
 
-version       = "0.2.0"
+version       = "0.3.0"
 author        = "Federico Ceratto"
 description   = "Nim restyling tool"
 license       = "GPLv3"
@@ -9,7 +9,7 @@ bin           = @["nimfmt"]
 
 # Dependencies
 
-requires "nim >= 1.0.0", "compiler#head"
+requires "nim >= 1.0.0", "compiler"
 
 # Cmds
 
